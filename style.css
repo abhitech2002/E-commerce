@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,14 +10,10 @@ body {
     background-color: lightgreen;
   }
   
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
   nav {
+    margin: 5px 10px;
     background-color: #1e2d3b;
-    padding: 10px 0;
+    padding: 10px 0px;
     border-radius: 10px;
   }
   
@@ -57,7 +58,7 @@ body {
   .search-bar {
     display: flex;
     align-items: center;
-    padding-left: 65%;
+    padding-left: 60%;
   }
   
   .search-bar input[type="text"] {
@@ -79,10 +80,12 @@ body {
     padding: 10px;
     color: white;
     text-align: center;
+    margin-top: 5px;
   }
   
   footer .contact-info,
-  footer .location-info {
+  footer .location-info,
+  footer .developer-info {
     margin-bottom: 10px;
   }
   
@@ -90,34 +93,32 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+    padding: 5px;
+    border: 2px solid rgb(8, 0, 0);
+    background-color: beige;
   }
   
   .product {
-    border: 1px solid #ccc;
+    border: 1px solid #fd0101;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(7, 0, 0, 0.589);
   }
   
   .product h3 {
     margin-top: 0;
+    color: white;
   }
   
   .product p {
     margin: 5px 0;
+    color: white;
   }
   
   .product img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-  }
-  
-  .add-to-cart {
-    background-color: #4CAF50;
     color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
   }
 
 
